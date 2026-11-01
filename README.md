@@ -280,29 +280,7 @@ MiMo、Qwen-Image、Wan2.2 不会同时驻留：
 
 ---
 
-# 5. 发布到 GitHub
-
-仓库已用 `.gitignore` 排除：
-
-```text
-models/
-outputs/
-*.safetensors
-*.gguf
-*.7z
-```
-
-推送到 GitHub：
-
-```bash
-git remote add origin https://github.com/<you>/<repo>.git
-git push -u origin main
-```
-
-不要把 54GB 模型权重或生成物提交进仓库；用 `scripts/download_models.ps1`
-让使用者自行下载，并在 README 保留模型许可链接。
-
-## 许可
+# 5. 许可与使用边界
 
 - 本仓库代码：MIT
 - Qwen-Image 2.1 / Wan2.2 / MiMo：遵循各自模型许可
