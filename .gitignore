@@ -1,0 +1,13 @@
+# Local model weights and generated outputs stay out of Git.
+models/
+outputs/
+*.safetensors
+*.gguf
+*.ckpt
+*.pth
+*.7z
+*.parts/
+__pycache__/
+.venv/
+.idea/
+.DS_Store
