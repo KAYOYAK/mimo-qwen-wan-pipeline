@@ -41,6 +41,34 @@ flowchart LR
 本项目在 Windows 上用 ComfyUI standalone 环境实测；ComfyUI Desktop 也可以，
 只要版本不低于 v0.43、模型目录指对即可。
 
+## 项目展示
+
+### 项目演示视频
+
+[![项目演示视频](assets/project/tour.gif)](assets/project/tour.mp4)
+
+- [▶ 项目演示视频 MP4](assets/project/tour.mp4)（架构 → workflow → 部署验证 → 示例输出）
+- [项目结构与部署验证](assets/project/deployment.png)
+
+### 架构与工作流
+
+| 架构 | 已发布 workflow |
+|---|---|
+| ![架构](assets/project/architecture.png) | ![workflow 结构](assets/project/workflow_graph.png) |
+
+### 示例输出（SFW）
+
+|  |  |
+|---|---|
+| ![雪中小屋](assets/images/snow_cabin.png) | ![未来城市](assets/images/future_city.png) |
+| ![红狐](assets/images/red_fox.png) | ![秋日庭院](assets/images/autumn_garden.png) |
+
+| 图生视频 | 预览 |
+|---|---|
+| [雪中小屋 I2V MP4](assets/videos/snow_cabin_i2v.mp4) | ![雪中小屋预览](assets/videos/snow_cabin_i2v.gif) |
+| [红狐 I2V MP4](assets/videos/red_fox_i2v.mp4) | ![红狐预览](assets/videos/red_fox_i2v.gif) |
+
+> 以上 4 图为 Qwen-Image-2.1-Turbo 生成，2 条视频为 Wan2.2-I2V-A14B 生成；仅用于展示本地管线，均为 SFW 内容。
 > 本文档只针对**非性、合法内容**。不要生成真人冒充、非自愿、色情或其他违法内容。
 
 ## 文档导航
