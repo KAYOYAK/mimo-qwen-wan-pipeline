@@ -47,14 +47,30 @@ flowchart LR
 
 [![项目演示视频](assets/project/tour.gif)](assets/project/tour.mp4)
 
-- [▶ 项目演示视频 MP4](assets/project/tour.mp4)（架构 → workflow → 部署验证 → 示例输出）
-- [项目结构与部署验证](assets/project/deployment.png)
+- [▶ 项目演示视频 MP4](assets/project/tour.mp4)（55 秒：架构 → workflow → 子图 → 真实终端 → 仓库 → 示例输出）
+- 真实本地终端的部署验证截图：[terminal_setup.png](assets/project/terminal_setup.png)
 
-### 架构与工作流
+### 架构与发布工作流
 
 | 架构 | 已发布 workflow |
 |---|---|
 | ![架构](assets/project/architecture.png) | ![workflow 结构](assets/project/workflow_graph.png) |
+
+### Qwen / Wan 子图内部结构
+
+| Qwen-Image 2.1 子图 | Wan2.2 I2V 子图 |
+|---|---|
+| ![Qwen 子图](assets/project/subgraph_qwen.png) | ![Wan 子图](assets/project/subgraph_wan.png) |
+
+### 真实部署验证
+
+| 本地终端验证 | GitHub 仓库页面 |
+|---|---|
+| ![终端验证](assets/project/terminal_setup.png) | ![GitHub 仓库](assets/project/github_repo.png) |
+
+- ComfyUI v0.43.0；Python 3.13.12；torch 2.12.1+cu130；RTX 5070 Ti Laptop 12GB
+- 官方模型约 54GB；Qwen-Image 768×768 实测 27–56 秒/张；Wan I2V 49 帧实测 89–103 秒/条
+- 工作流：8 个外层节点、9 条连线、2 个官方子图、2 个显存卸载节点
 
 ### 示例输出（SFW）
 
@@ -68,9 +84,7 @@ flowchart LR
 | [雪中小屋 I2V MP4](assets/videos/snow_cabin_i2v.mp4) | ![雪中小屋预览](assets/videos/snow_cabin_i2v.gif) |
 | [红狐 I2V MP4](assets/videos/red_fox_i2v.mp4) | ![红狐预览](assets/videos/red_fox_i2v.gif) |
 
-> 以上 4 图为 Qwen-Image-2.1-Turbo 生成，2 条视频为 Wan2.2-I2V-A14B 生成；仅用于展示本地管线，均为 SFW 内容。
-> 本文档只针对**非性、合法内容**。不要生成真人冒充、非自愿、色情或其他违法内容。
-
+> 项目图、终端截图、GitHub 页面和 workflow 图展示的是工程本身；4 张图与 2 条视频是本地管线的 SFW 示例输出。
 ## 文档导航
 
 1. [本地部署 MiMo-V2.6-9B（llama.cpp）](docs/DEPLOY_MIMO.md) — 独立 llama-server 与 ComfyUI 内 LLM 节点两条路径
