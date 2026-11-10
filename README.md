@@ -43,7 +43,7 @@ flowchart LR
 
 ## 项目展示
 
-### 65 秒项目演示
+### 60 秒项目演示
 
 [![项目演示视频](assets/project/tour.gif)](assets/project/tour.mp4)
 
@@ -70,9 +70,9 @@ flowchart LR
 
 ### 真实运行验证
 
-| 本地终端 | GitHub 仓库页面 |
+| 本地终端验证 | 部署指标 |
 |---|---|
-| ![终端验证](assets/project/terminal_setup.png) | ![GitHub 仓库](assets/project/github_repo.png) |
+| ![终端验证](assets/project/terminal_setup.png) | ![部署指标](assets/project/deployment.png) |
 
 | 部署指标 | 值 |
 |---|---|
